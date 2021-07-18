@@ -2,7 +2,7 @@ Name: haruna
 Version: 0.6.3.1
 Release: alt1
 
-License: GPL-3.0-or-later
+License: GPL-3.0-or-later and BSD-3-Clause and CC-BY-4.0 and WTFPL
 Group: Video
 Url: https://invent.kde.org/multimedia/haruna
 Packager: Evgeny Chuck <koi at altlinux.org>
@@ -36,14 +36,14 @@ BuildRequires: kf5-kirigami-devel
 
 BuildRequires: libmpv-devel
 
-Requires: libmpv1
 Requires: youtube-dl
-Requires: kde5-kio-extras
+# To draw the window correctly in gtk DE.
 Requires: plasma5-breeze
+Requires: kf5-kirigami
 Requires: icon-theme-breeze
 Requires: kf5-qqc2-desktop-style
-Requires: kf5-kirigami
 Requires: qt5-graphicaleffects
+#
 
 Summary: Haruna is an open source video player built with Qt/QML and libmpv
 Summary(ru_RU.UTF-8): Haruna - это видеоплеер с открытым исходным кодом, созданный с использованием Qt/QML и libmpv
